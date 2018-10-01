@@ -1,43 +1,29 @@
 public class Solution {
-    public List<String> validParenthesis(int k) {
-        List<String> result = new ArrayList<>();
-        // the final string contains 2k characters.
-        char[] cur = new char[k * 2];
-        DFS(cur, k, k, 0, result);
+    public List<Integer> common(List<Integer> A, List<Integer> B) {
+        List<Integer> result = new ArrayList<Integer>();
+        if (A.size() < B.size()) {
+            getCommon(A, B, result);
+        } else {
+            getCommon(B, A, result);
+        }
         return result;
+    }
+
+    private void getCommon(List<Integer> small, List<Integer> large, List<Integer> result) {
+        for (Integer num : small) {
+            int i = 0;
+            int j = large.size() - 1;
+            while (i <= j) {
+                int mid = i + (j - i) / 2;
+                if (num < large.get(mid)) {
+                    j = mid - 1;
+                } else if (num > large.get(mid)) {
+                    i = mid + 1;
+                } else {
+                    result.add(num);
+                    break;
+                }
+            }
         }
-        
-        //left: how many ‘(’ we still have
-        //right: how many ‘)’ we still have
-        //index: the current position in cur we want to fill in with either ‘(’ or ‘)’
-        public void DFS(char[] cur, int left, int right, int index, List<String> result) {
-        //terminate condition: 
-        //when we do not have any parenthesis left
-        if (left == 0 && right == 0) {
-            result.add(new String(cur));
-            return;
-        }
-        //when can we add a ‘(‘? whenever there is some ‘(‘ we can still use.
-        if (left > 0) {
-        cur[index] = '(';
-        DFS(cur, left - 1, right, index + 1, result);
-        //NOTICE: it looks like we donot do anything when back tracking to
-        //the previous level.
-        //the code is still correct because:
-        //1. we are setting the character at index and when back tracking, 
-        // what we need is just 1) remove the character at index and 2) add
-        // a different character at index.
-        //2. only when we fill in all the position in cur, we have a complete 
-        //solution.
-        //thec code itself actually already suffices the above two points and 
-        //it already does the currect removing operation when back tracked to //the previous level.
-        }
-        //when can we add a ‘)’? when there is more ‘(‘ than ‘)’ used.
-        //because each ‘)’ should be associated with a previous ‘(‘
-        if (right > left) {
-        cur[index] = ')';
-        DFS(cur, left, right - 1, index + 1, result);
-        }
-        }
-        
+    }
 }
