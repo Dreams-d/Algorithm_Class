@@ -16,7 +16,7 @@ public class ReverseString {
         if (input == null || input.length() <= 1) {
             return input;
         }
-        char[] array = input.toCHarArray();
+        char[] array = input.toCharArray();
         for (int left = 0, right = array.length - 1; left < right; left++, right--) {
             swap(array, left, right);
         }
