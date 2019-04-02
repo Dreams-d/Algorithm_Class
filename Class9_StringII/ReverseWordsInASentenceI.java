@@ -1,3 +1,5 @@
+package Laicode.Class9_StringII;
+
 /**
  * Description Reverse the words in a sentence.
  * 
@@ -9,7 +11,7 @@
  * Corner Cases If the given string is null, we do not need to do anything.
  */
 
-public class ReverseWords {
+public class ReverseWordsInASentenceI {
     // Assumptions:
     // 1). The words are separated by one space character.
     // 2). Therer are no leading or trailing spaces.

@@ -1,3 +1,9 @@
+package Laicode.Class7_DFS;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Description
  * Given a string with no duplicate characters, return a list with all permutations of the characters.
@@ -13,7 +19,7 @@
  * Solution2 is specifically designed for lexicographically output, which prototype is All Subset I
  */
 
-public class PermutationI {
+public class AllPermutationsI {
     // 1. DFS solution with swapping
     public List<String> permutation(String set) {
         List<String> result = new ArrayList<>();

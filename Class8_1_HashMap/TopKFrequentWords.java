@@ -1,3 +1,10 @@
+package Laicode.Class8_1_HashMap;
+
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.PriorityQueue;
+
 /**
  * Description
  * Given a composition with different kinds of words, return a list of the top K most frequent words in the composition.
@@ -18,7 +25,7 @@
  * Space = O(n)
  */
 
-public class TopKFrequent {
+public class TopKFrequentWords {
     // Assumption: combo is not, and k >= 1
     public String[] topKFrequent(String[] combo, int k) {
         // handle the special case of empty combo at the very beginning
@@ -27,7 +34,7 @@ public class TopKFrequent {
         }
         // get all distinct strings as keys and their frequencies as values.
         // NOTICE: the freMap has at least size 1.
-        Map<String, Integer> freqMap = getFreMap(combo);
+        Map<String, Integer> freqMap = getFreqMap(combo);
         // minheap on the frequencies of the strings.
         // NOTICE: using Map.Entry as the element type directly so that
         // all the operations are mostly efficient.
@@ -66,12 +73,13 @@ public class TopKFrequent {
                 freqMap.put(s, freq + 1);
             }
         }
+        return freqMap;
     }
 
     private String[] freqArray(PriorityQueue<Map.Entry<String, Integer>> minHeap) {
-        String[] result = new String[minheap.size()];
-        for (int i = minheap.size() - 1; i >= 0; i--) {
-            result[i] = minheap.poll().getKey();
+        String[] result = new String[minHeap.size()];
+        for (int i = minHeap.size() - 1; i >= 0; i--) {
+            result[i] = minHeap.poll().getKey();
         }
         return result;
     }

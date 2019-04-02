@@ -1,3 +1,8 @@
+package Laicode.Class7_DFS;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Description
  * Given N pairs of parentheses “()”, return a list with all the valid permutations.
@@ -14,7 +19,7 @@
  * Space = O(2n)
  */
 
-public class Solution {
+public class AllValidPermutationsOfParenthesesI {
     public List<String> validParenthesis(int k) {
         List<String> result = new ArrayList<>();
         // the final string contains 2k characters.

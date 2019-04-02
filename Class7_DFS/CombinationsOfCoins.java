@@ -1,3 +1,8 @@
+package Laicode.Class7_DFS;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Description
  * Given a number of different denominations of coins (e.g., 1 cent, 5 cents, 10 cents, 25 cents), get all the possible ways to pay a target number of cents.
@@ -24,7 +29,7 @@
  * Space = O(number_of_coins)
  */
 
-public class Solution {
+public class CombinationsOfCoins {
     public List<List<Integer>> comninations(int target, int[] coins) {
         // each combinatoi is represented as a List<Integer> cur,
         // and cur.get(i) == the number of coins of coin[i].

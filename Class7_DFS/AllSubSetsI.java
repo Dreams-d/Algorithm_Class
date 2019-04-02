@@ -1,3 +1,8 @@
+package Laicode.Class7_DFS;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Description
  * Given a set of characters represented by a String, return a list containing all subsets of the characters.
@@ -15,7 +20,7 @@
  * */
 
 
-public class Solution {
+public class AllSubSetsI {
     // Assumptions: there are no duplicate characters in thr given string.
     // Method1: DFS solution
     public List<String> SubSetsI(String set) {

@@ -1,21 +1,26 @@
-/* Queue By Two Stacks
-Description
-Java: Implement a queue by using two stacks. The queue should provide size(), isEmpty(), offer(), poll() and peek() operations. When the queue is empty, poll() and peek() should return null.
+package Laicode.Class3_Stack_Queue;
 
-Assumptions
-The elements in the queue are all Integers.
-size() should return the number of elements buffered in the queue.
-isEmpty() should return true if there is no element buffered in the queue, false otherwise.
+import java.util.LinkedList;
 
-time of offer() = O(1)
-amortized time of poll() = O(1)
-*/
+/**
+ * Queue By Two Stacks
+ * Description
+ * Java: Implement a queue by using two stacks. The queue should provide size(), isEmpty(), offer(), poll() and peek() operations. When the queue is empty, poll() and peek() should return null.
+ *
+ * Assumptions
+ * The elements in the queue are all Integers.
+ * size() should return the number of elements buffered in the queue.
+ * isEmpty() should return true if there is no element buffered in the queue, false otherwise.
+ *
+ * time of offer() = O(1)
+ * amortized time of poll() = O(1)
+ */
 
 public class QueueByTwoStacks {
 	private LinkedList<Integer> in;//基础加强班是用Deque来写的
 	private LinkedList<Integer> out;
 	
-	public QueueByTwoStack() {
+	public QueueByTwoStacks() {
 		in = new LinkedList<Integer>();
 		out = new LinkedList<Integer>();
 	}

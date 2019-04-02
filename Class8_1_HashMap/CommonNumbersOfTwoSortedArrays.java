@@ -1,3 +1,8 @@
+package Laicode.Class8_1_HashMap;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * Description Find all numbers that appear in both of two sorted arrays (the
@@ -12,7 +17,7 @@
  * Metho
  */
 
-public class CommonNumbers {
+public class CommonNumbersOfTwoSortedArrays {
     // Assumption: there could be duplicate in arrays.
     // Method1: two pointers
     public List<Integer> commonI(List<Integer> A, List<Integer> B) {

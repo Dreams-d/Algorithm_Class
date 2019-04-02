@@ -1,12 +1,17 @@
-/* Check If Linked List Has A Cycle
-Description
-Check if a given linked list has a cycle. Return true if it does, otherwise return false.
+package Laicode.Class4_LinkedList;
 
-time = O(n)
-space = O(1)
-*/
+import Laicode.ListNode;
 
-public class Solution {
+/**
+ * Check If Linked List Has A Cycle
+ * Description
+ * Check if a given linked list has a cycle. Return true if it does, otherwise return false.
+ *
+ * time = O(n)
+ * space = O(1)
+ */
+
+public class CheckIfLinkedListHasACycle {
 	public boolean hasCycle(ListNode head) {
 		if (head == null || head.next == null) {
 			return false;

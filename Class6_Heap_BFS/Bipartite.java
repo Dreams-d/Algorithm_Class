@@ -1,3 +1,10 @@
+package Laicode.Class6_Heap_BFS;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 /**
  * Description
  * Determine if an undirected graph is bipartite. A bipartite graph is one in which the nodes can be divided into two groups such that no nodes have direct edges to other nodes in the same group.
@@ -20,7 +27,7 @@
  * Space = O(n)
  */
 
-public class Solution {
+public class Bipartite {
     // Assumptions: The given graph is not null
     public boolean isBipartite(List<GraphNode> graph) {
         // use 0 and 1 to denote two different groups.
@@ -37,7 +44,7 @@ public class Solution {
         return true;
     }
 
-    private boolean BFS(GraphNode node, HashMap<GrapNode, Integer> visited) {
+    private boolean BFS(GraphNode node, HashMap<GraphNode, Integer> visited) {
         // If this node has been traversed, no need to do BFS again.
         if (visited.containsKey(node)) {
             return true;
@@ -70,4 +77,12 @@ public class Solution {
         }
         return true;
     }
+}
+
+class GraphNode {
+	public List<GraphNode> neighbors;
+	public int key;
+	GraphNode(int key) {
+		this.key = key;
+	}
 }

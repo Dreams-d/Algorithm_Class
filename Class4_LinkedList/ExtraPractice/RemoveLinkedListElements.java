@@ -1,17 +1,22 @@
-/* Remove Linked List Elements
-Description
-Remove all elements from a linked list of integers that have value val.
+package Laicode.Class4_LinkedList.ExtraPractice;
 
-Example
-1 -> 2 -> 6 -> 3 -> 4 -> 5 -> 6, val = 6, --> 1 -> 2 -> 3 -> 4 -> 5
-1 -> 1 -> 1, val = 1, --> null
-2 -> 1 -> 2 -> 3, val = 2, --> 1 ->3
+import Laicode.ListNode;
 
-time = O(n)
-space = O(1)
-*/
+/**
+ * Remove Linked List Elements
+ * Description
+ * Remove all elements from a linked list of integers that have value val.
+ *
+ * Example
+ * 1 -> 2 -> 6 -> 3 -> 4 -> 5 -> 6, val = 6, --> 1 -> 2 -> 3 -> 4 -> 5
+ * 1 -> 1 -> 1, val = 1, --> null
+ * 2 -> 1 -> 2 -> 3, val = 2, --> 1 ->3
+ *
+ * time = O(n)
+ * space = O(1)
+ */
 
-public class Solution {
+public class RemoveLinkedListElements {
 	public ListNode removeElements(ListNode head, int val) {
 		if (head == null) {
 			return head;

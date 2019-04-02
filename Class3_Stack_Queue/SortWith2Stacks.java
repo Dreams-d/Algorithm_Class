@@ -1,16 +1,22 @@
-/* Sort With 2 Stacks
-Description
-Given an array that is initially stored in one stack, sort it with one additional stacks (total 2 stacks).
-After sorting the original stack should contain the sorted integers and from top to bottom the integers are sorted in ascending order.
+package Laicode.Class3_Stack_Queue;
 
-Assumptions:
-The given stack is not null.
+import java.util.Deque;
+import java.util.LinkedList;
 
-Requirements:
-No additional memory, time complexity = O(n ^ 2).
-*/
+/**
+ * Sort With 2 Stacks
+ * Description
+ * Given an array that is initially stored in one stack, sort it with one additional stacks (total 2 stacks).
+ * After sorting the original stack should contain the sorted integers and from top to bottom the integers are sorted in ascending order.
+ *
+ * Assumptions:
+ * The given stack is not null.
+ *
+ * Requirements:
+ * No additional memory, time complexity = O(n ^ 2).
+ */
 
-public class Solution {
+public class SortWith2Stacks {
 	public Deque<Integer> sort(Deque<Integer> s1) {
 		Deque<Integer> s2 = new LinkedList<>();
 		// outer loop: control the times of iteration, i also as a count for sorted

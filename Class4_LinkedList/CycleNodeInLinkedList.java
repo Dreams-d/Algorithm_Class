@@ -1,12 +1,17 @@
-/* Cycle Node In Linked List
-Description
-Check if a given linked list has a cycle. Return the node where the cycle starts. Return null if there is no cycle.
+package Laicode.Class4_LinkedList;
 
-time = O(2n) = O(n)
-space = O(1)
-*/
+import Laicode.ListNode;
 
-public class Solution {
+/**
+ * Cycle Node In Linked List
+ * Description
+ * Check if a given linked list has a cycle. Return the node where the cycle starts. Return null if there is no cycle.
+ *
+ * time = O(2n) = O(n)
+ * space = O(1)
+ */
+
+public class CycleNodeInLinkedList {
 	public ListNode cycleNode(ListNode head) {
 		if (head == null || head.next == null) {
 			return null;

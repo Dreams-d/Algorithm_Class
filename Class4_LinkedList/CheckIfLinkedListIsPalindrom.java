@@ -1,3 +1,7 @@
+package Laicode.Class4_LinkedList;
+
+import Laicode.ListNode;
+
 /**
  * Description
  * Given a linked list, check whether it is a palindrome.
@@ -15,7 +19,7 @@
  * Space = O(1)
  */
 
-public class Solution {
+public class CheckIfLinkedListIsPalindrom {
     public boolean isPalindrome(ListNode head) {
         if (head == null || head.next == null) {
             return true;

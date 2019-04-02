@@ -1,29 +1,37 @@
-/* Get Keys In Binary Search Tree In Given Range
-Description
-Get the list of keys in a given binary search tree in a given range[min, max] in ascending order, both min and max are inclusive.
+package Laicode.Class5_BinaryTree_BST;
 
-Examples
+import Laicode.TreeNode;
 
-        5
+import java.util.ArrayList;
+import java.util.List;
 
-      /    \
+/**
+ * Get Keys In Binary Search Tree In Given Range
+ * Description
+ * Get the list of keys in a given binary search tree in a given range[min, max] in ascending order, both min and max are inclusive.
+ *
+ * Examples
+ *
+ *         5
+ *
+ *       /    \
+ *
+ *     3        8
+ *
+ *   /   \        \
+ *
+ *  1     4        11
+ *
+ * get the keys in [2, 5] in ascending order, result is  [3, 4, 5]
+ *
+ * Corner Cases
+ * What if there are no keys in the given range? Return an empty list in this case.
+ *
+ * time = O(n)	//O(height + logk)
+ * space = O(height)
+ */
 
-    3        8
-
-  /   \        \
-
- 1     4        11
-
-get the keys in [2, 5] in ascending order, result is  [3, 4, 5]
-
-Corner Cases
-What if there are no keys in the given range? Return an empty list in this case.
-
-time = O(n)	//O(height + logk)
-space = O(height)
-*/
-
-public class Solution {
+public class GetKeysInBinarySearchTreeInGivenRange {
 	public List<Integer> getRange(TreeNode root, int min, int max) {
 		List<Integer> list = new ArrayList<>();
 		getRange(root, min, max, list);

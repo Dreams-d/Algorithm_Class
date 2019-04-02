@@ -1,3 +1,5 @@
+package Laicode.Class8_2_StringI;
+
 /**
  * Description
  * Remove adjacent, repeated characters in a given string, leaving only one character for each group of such characters.
@@ -14,7 +16,7 @@
  * Time = O(n), Space = O(1)
  */
 
- public class RemoveDuplicateI {
+ public class RemoveAdjacentRepeatedCharactersI {
     public String deDup(String input) {
         if (input == null) {
             return null;

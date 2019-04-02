@@ -1,3 +1,5 @@
+package Laicode.Class8_2_StringI;
+
 /**
  * Description
  * Determine if a small string is a substring of another large string.
@@ -27,7 +29,7 @@
 //3.You probably do not need to write this kind of solution to handle above
 //	two cases, if you are in an interview. But it is still necessary to
 //	understand the reason behind it.
-public class Strstr {
+public class DetermineIfOneStringIsAnotherSubstring {
     // Method1: Natice solution
     public int strStrI(String large, String small) {
         if (large == null || small == null) {

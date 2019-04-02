@@ -1,3 +1,7 @@
+package Laicode.Class6_Heap_BFS;
+
+import java.util.*;
+
 /**
  * Description 
  * Find the K smallest numbers in an unsorted integer array A. The returned numbers should be in ascending order. 
@@ -12,7 +16,7 @@
  * A = {3, 4, 1, 2, 5}, K = 3, the 3 smallest numbers are {1, 2, 3}
  */
 
-public class Solution {
+public class KSmallestInUnsortedArray {
     // Method1: k sized max-heap
     // Time = O(nlogk) -> O(k + (n-k)logk) when use heapify()
     // Space = O(k)

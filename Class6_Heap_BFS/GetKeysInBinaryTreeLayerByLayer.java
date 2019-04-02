@@ -1,3 +1,12 @@
+package Laicode.Class6_Heap_BFS;
+
+import Laicode.TreeNode;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 /**
  * Get the list of list of keys in a given binary tree layer by layer. Each layer is represented by a list of keys and the keys are traversed from left to right.
  * Examples
@@ -16,7 +25,7 @@
  * Space = O(n)
  */
 
-public class Solution {
+public class GetKeysInBinaryTreeLayerByLayer {
     public List<List<Integer>> layerByLayer(TreeNode root) {
         List<List<Integer>> list = new ArrayList<List<Integer>>();
         if (root == null) {

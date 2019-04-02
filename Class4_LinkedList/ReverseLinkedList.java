@@ -1,18 +1,23 @@
-/* Reverse Linked List
-Description
-Reverse a singly-linked list.
+package Laicode.Class4_LinkedList;
 
-Examples
-L = null, return null
-L = 1 -> null, return 1 -> null
-L = 1 -> 2 -> 3 -> null, return 3 -> 2 -> 1 -> null
+import Laicode.ListNode;
 
-time = O(n)
-space = O(1) - iterative
-space = O(n) - recursive
-*/
+/**
+ * Reverse Linked List
+ * Description
+ * Reverse a singly-linked list.
+ *
+ * Examples
+ * L = null, return null
+ * L = 1 -> null, return 1 -> null
+ * L = 1 -> 2 -> 3 -> null, return 3 -> 2 -> 1 -> null
+ *
+ * time = O(n)
+ * space = O(1) - iterative
+ * space = O(n) - recursive
+ */
 
-public class Solution {
+public class ReverseLinkedList {
 	public ListNode reverseIte(ListNode head) {
 		if (head == null || head.next == null)
 			return head;
@@ -33,7 +38,7 @@ public class Solution {
 			return head;
 		}
 		// smaller size problem, newHead is NodeN
-		ListNode newHead = reverse(head.next);
+		ListNode newHead = reverseRec(head.next);
 		// 每次传上来的head就是base case的尾巴。
 		// tail指针每次有两个node指向它，head和后一个。tail指向null
 		ListNode tail = head.next;

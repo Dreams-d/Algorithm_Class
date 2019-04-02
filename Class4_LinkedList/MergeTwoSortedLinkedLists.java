@@ -1,17 +1,22 @@
-/* Merge Two Sorted Linked Lists
-Description
-Merge two sorted lists into one large sorted list.
+package Laicode.Class4_LinkedList;
 
-Examples
-L1 = 1 -> 4 -> 6 -> null, L2 = 2 -> 5 -> null, merge L1 and L2 to 1 -> 2 -> 4 -> 5 -> 6 -> null
-L1 = null, L2 = 1 -> 2 -> null, merge L1 and L2 to 1 -> 2 -> null
-L1 = null, L2 = null, merge L1 and L2 to null
+import Laicode.ListNode;
 
-time = O(m + n)
-space = O(1)
-*/
+/**
+ * Merge Two Sorted Linked Lists
+ * Description
+ * Merge two sorted lists into one large sorted list.
+ *
+ * Examples
+ * L1 = 1 -> 4 -> 6 -> null, L2 = 2 -> 5 -> null, merge L1 and L2 to 1 -> 2 -> 4 -> 5 -> 6 -> null
+ * L1 = null, L2 = 1 -> 2 -> null, merge L1 and L2 to 1 -> 2 -> null
+ * L1 = null, L2 = null, merge L1 and L2 to null
+ *
+ * time = O(m + n)
+ * space = O(1)
+ */
 
-public class Solution {
+public class MergeTwoSortedLinkedLists {
 	public ListNode merge(ListNode head1, ListNode head2) {
 		ListNode dummyHead = new ListNode(0);
 		ListNode curr1 = head1, curr2 = head2, tail = dummyHead;

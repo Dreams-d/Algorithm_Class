@@ -1,3 +1,10 @@
+package Laicode.Class6_Heap_BFS;
+
+import Laicode.TreeNode;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * Description
  * Check if a given binary tree is completed. A complete binary tree is one in which every level of the binary tree is completely filled except possibly the last level. Furthermore, all nodes are as far left as possible.
@@ -18,7 +25,7 @@
  */
 
 
-public class Solution {
+public class CheckIfBinaryTreeIsCompleted {
     public boolean isCompleted(TreeNode root) {
         if (root == null) {
             return true;

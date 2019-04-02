@@ -1,17 +1,23 @@
-/* Deque By Three Stack
-How to use multiple Stacks to implement a deque
-Deque:左右都可以进出
-Observer	Left  xxxxxxxx12345678xxxxxxxx Right
-4APIS		Left.add()						  Right.add()
-Left.remove()					  Right.remove()
+package Laicode.Class3_Stack_Queue;
 
-Stack1: left hand side
-Stack2: right hand side
-Stack3: buffer(half elements)
+import java.util.Deque;
+import java.util.LinkedList;
 
-time of push = O(1)
-amortized time of pop() = O(1)
-*/
+/**
+ * Deque By Three Stack
+ * How to use multiple Stacks to implement a deque
+ * Deque:左右都可以进出
+ * Observer	Left  xxxxxxxx12345678xxxxxxxx Right
+ * 4APIS		Left.add()						  Right.add()
+ * Left.remove()					  Right.remove()
+ *
+ * Stack1: left hand side
+ * Stack2: right hand side
+ * Stack3: buffer(half elements)
+ *
+ * time of push = O(1)
+ * amortized time of pop() = O(1)
+ */
 
 public class DequeByThreeStack {
 	Deque<Integer> stack1;

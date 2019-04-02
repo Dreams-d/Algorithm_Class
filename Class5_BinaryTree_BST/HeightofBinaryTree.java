@@ -1,3 +1,7 @@
+package Laicode.Class5_BinaryTree_BST;
+
+import Laicode.TreeNode;
+
 /**
  * Description
  * Find the height of binary tree.
@@ -14,7 +18,7 @@
  * Space = O(height)
  */
 
-public class Solution {
+public class HeightofBinaryTree {
     public int findHeight(TreeNode root) {
       if (root == null) {
         return 0;

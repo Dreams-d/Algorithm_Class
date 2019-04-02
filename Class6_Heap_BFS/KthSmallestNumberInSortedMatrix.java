@@ -1,3 +1,8 @@
+package Laicode.Class6_Heap_BFS;
+
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 /**
  * Description
  * Given a matrix of size N x M. For each row the elements are sorted in ascending order, and for each column the elements are also sorted in ascending order. Find the Kth smallest number in it.
@@ -15,7 +20,7 @@
  * Space = O(k + n^2)
  */
 
-public class Solution {
+public class KthSmallestNumberInSortedMatrix {
     public int kthSmallest(int[][] matrix, int k) {
         int rows = matrix.length;
         int columns = matrix[0].length;

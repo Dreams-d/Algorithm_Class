@@ -1,15 +1,20 @@
-/* Search In Binary Search Tree
-Description
-Find the target key K in the given binary search tree, return the node that contains the key if K is found, otherwise return null.
+package Laicode.Class5_BinaryTree_BST;
 
-Assumptions
-There are no duplicate keys in the binary search tree
+import Laicode.TreeNode;
 
-time = O(logn)
-space = O(height) / O(1)
-*/
+/**
+ * Search In Binary Search Tree
+ * Description
+ * Find the target key K in the given binary search tree, return the node that contains the key if K is found, otherwise return null.
+ *
+ * Assumptions
+ * There are no duplicate keys in the binary search tree
+ *
+ * time = O(logn)
+ * space = O(height) / O(1)
+ */
 
-public class Solution {
+public class SearchInBinarySearchTree {
     public TreeNode search(TreeNode root, int key) {
         if (root == null) {
             return null;

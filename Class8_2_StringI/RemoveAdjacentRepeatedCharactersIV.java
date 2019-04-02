@@ -1,3 +1,8 @@
+package Laicode.Class8_2_StringI;
+
+import java.util.Deque;
+import java.util.LinkedList;
+
 /**
  * Description
  * Repeatedly remove all adjacent, repeated characters in a given string from left to right.
@@ -11,7 +16,7 @@
  * Space = O(n) / O(1)
  */
 
-public class RemoveDuplicateIV {
+public class RemoveAdjacentRepeatedCharactersIV {
     public String deDupI(String input) {
         if (input == null || input.length() == 0) {
             return input;
