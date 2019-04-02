@@ -1,7 +1,5 @@
 package Laicode.Class5_BinaryTree_BST;
 
-import Laicode.TreeNode;
-
 /**
  * Tweaked Identical Binary Trees
  * Description

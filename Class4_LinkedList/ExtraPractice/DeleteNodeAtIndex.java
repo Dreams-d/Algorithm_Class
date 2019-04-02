@@ -1,7 +1,5 @@
 package Laicode.Class4_LinkedList.ExtraPractice;
 
-import Laicode.ListNode;
-
 /**
  * Delete Node At Index
  * Description

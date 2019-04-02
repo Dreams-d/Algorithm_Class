@@ -1,7 +1,5 @@
 package Laicode.Class6_Heap_BFS;
 
-import Laicode.TreeNode;
-
 import java.util.LinkedList;
 import java.util.Queue;
 

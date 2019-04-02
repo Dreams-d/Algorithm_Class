@@ -1,7 +1,5 @@
 package Laicode.Class4_LinkedList;
 
-import Laicode.ListNode;
-
 /**
  * Merge Two Sorted Linked Lists
  * Description
