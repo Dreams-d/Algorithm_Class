@@ -1,5 +1,7 @@
 package Laicode.Class4_LinkedList;
 
+import Laicode.ListNode;
+
 /**
  * Description
  * Given a linked list, check whether it is a palindrome.

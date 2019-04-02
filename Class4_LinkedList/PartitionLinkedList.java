@@ -1,5 +1,7 @@
 package Laicode.Class4_LinkedList;
 
+import Laicode.ListNode;
+
 /**
  * Partition Linked List
  * Description

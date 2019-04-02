@@ -1,5 +1,7 @@
 package Laicode.Class4_LinkedList;
 
+import Laicode.ListNode;
+
 /**
  * Cycle Node In Linked List
  * Description

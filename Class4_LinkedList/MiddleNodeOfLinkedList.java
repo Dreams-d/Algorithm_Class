@@ -1,5 +1,7 @@
 package Laicode.Class4_LinkedList;
 
+import Laicode.ListNode;
+
 /**
  * Middle Node Of Linked List
  * Description

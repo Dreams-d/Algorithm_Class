@@ -1,5 +1,7 @@
 package Laicode.Class4_LinkedList.ExtraPractice;
 
+import Laicode.ListNode;
+
 /**
  * Linked List Insert At Index
  * Description

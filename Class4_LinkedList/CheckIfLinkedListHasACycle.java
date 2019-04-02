@@ -1,5 +1,7 @@
 package Laicode.Class4_LinkedList;
 
+import Laicode.ListNode;
+
 /**
  * Check If Linked List Has A Cycle
  * Description

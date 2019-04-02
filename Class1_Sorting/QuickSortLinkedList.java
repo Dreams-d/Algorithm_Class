@@ -1,5 +1,7 @@
 package Laicode.Class1_Sorting;
 
+import Laicode.ListNode;
+
 /**
  * Quick Sort Linked List
  * Description

@@ -1,5 +1,7 @@
 package Laicode.Class5_BinaryTree_BST;
 
+import Laicode.TreeNode;
+
 /**
  * Search In Binary Search Tree
  * Description
