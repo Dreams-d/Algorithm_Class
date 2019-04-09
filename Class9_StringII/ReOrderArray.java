@@ -1,10 +1,32 @@
 package Laicode.Class9_StringII;
 
+/**
+ * Description
+ * Given an array of elements, reorder it as follow:
+ *
+ * { N1, N2, N3, …, N2k } → { N1, Nk+1, N2, Nk+2, N3, Nk+3, … , Nk, N2k }
+ * { N1, N2, N3, …, N2k+1 } → { N1, Nk+1, N2, Nk+2, N3, Nk+3, … , Nk, N2k, N2k+1 }
+ *
+ * Try to do it in place.
+ *
+ * Assumptions
+ * The given array is not null
+ * Examples
+ *
+ * { 1, 2, 3, 4, 5, 6} → { 1, 4, 2, 5, 3, 6 }
+ * { 1, 2, 3, 4, 5, 6, 7, 8 } → { 1, 5, 2, 6, 3, 7, 4, 8 }
+ * { 1, 2, 3, 4, 5, 6, 7 } → { 1, 4, 2, 5, 3, 6, 7 }
+ *
+ * Time = O(nlogn)
+ * Space = O(logn)
+ */
 public class ReOrderArray {
     public int[] reorder(int[] array) {
         if (array.length % 2 == 0) {
             reorder(array, 0, array.length - 1);
         } else  {
+            // if array has odd number of elements, we ignore the last one
+            // when we  do reordering;
             reorder(array, 0, array.length - 2);
         }
         return array;
@@ -14,11 +36,11 @@ public class ReOrderArray {
         int length = right - left + 1;
         // if the subarray has 2 or 0 elements, we can just return
         // as this should be the base case
-        if  (length <= 2) {
+        if  (length <= 2) {  //left >= right - 1
             return;
         }
 
-        //19932079 Calculate the important mid points:
+        //Calculate the important mid points:
         // 0    1   2   3   4   5   6   7
         //lm:2, m:4, rm:6
         // 0    1   2   3   4   5   6   7   8   9

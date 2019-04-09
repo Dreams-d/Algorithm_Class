@@ -58,7 +58,7 @@ public class StringReplace {
         // In this solution, we can actually allocate a larger array on demand, and the purpose 
         // of the solution is to demonstrate how to do it “in place”.
 
-        // get all  the matches end positions in the input cha rarrat of string s.
+        // get all the matches end positions in the input char array of string s.
         Set<Integer> matches = getMatches(array, source);
         // calculate the new length needed
         char[] result = new char[array.length + (target.length() - source.length()) * matches.size()];

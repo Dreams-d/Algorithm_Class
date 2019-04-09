@@ -1,3 +1,7 @@
+package Laicode.Class8_1_HashMap;
+
+import java.util.HashSet;
+
 /**
  * Description
  * Given an integer array of size N - 1, containing all the numbers from 1 to N except one, find the missing number.
@@ -20,9 +24,9 @@ public class MissingNumberI {
     // Assumption: array is not null
     public int missingI(int[] array) {
         int n = array.length + 1;
-        HasheSet<Integer> set = new HashSet<Integer>();
+        HashSet<Integer> set = new HashSet<Integer>();
         for (int num : array) {
-            set.add(number);
+            set.add(num);
         }
         for (int i = 1; i < n; i++) {
             if (!set.contains(i)) {
@@ -38,7 +42,7 @@ public class MissingNumberI {
         long targetSum = (n + 0L) * (n + 1) / 2;
         long actualSum = 0L;
         for (int num : array) {
-            acutualSum += num;
+            actualSum += num;
         }
         return (int) (targetSum - actualSum);
     }

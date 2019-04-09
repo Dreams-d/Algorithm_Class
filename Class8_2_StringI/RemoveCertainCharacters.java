@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Description
  * Remove given characters in input string, the relative order of other characters should be remained. Return the new string after deletion.
