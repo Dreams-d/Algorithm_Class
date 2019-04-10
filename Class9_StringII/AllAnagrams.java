@@ -93,6 +93,50 @@ public class AllAnagrams {
 		return map;
 	}
 
+	public List<Integer> findAnagrams(String s, String p) {
+		List<Integer> result = new ArrayList<>();
+		if(p.length()> s.length())
+			return result;
+
+		Map<Character, Integer> map = new HashMap<>();
+		for(char c : p.toCharArray()){
+			map.put(c, map.getOrDefault(c, 0) + 1);
+		}
+
+		int match = map.size();
+		int left = 0, right = 0;
+
+		while(right < s.length()){
+			char c = s.charAt(right);
+			if( map.containsKey(c) ){
+				map.put(c, map.get(c)-1);
+				if(map.get(c) == 0) {
+					match--;
+				}
+			}
+
+			// Only when we find all letters are matched, we move the left point to position
+			// where we can find the substring that is as long as pattern
+			while(match == 0){
+				if(right - left + 1 == p.length()){
+					result.add(left);
+				}
+
+				char tempc = s.charAt(left);
+				if(map.containsKey(tempc)){
+					map.put(tempc, map.get(tempc) + 1);
+					if(map.get(tempc) > 0){
+						match++;
+					}
+				}
+
+				left++;
+			}
+			right++;
+		}
+		return result;
+	}
+
 	public static void main (String[] args) {
 		AllAnagrams sol = new AllAnagrams();
 		String l = "abcbac", s = "ab";
