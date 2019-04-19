@@ -1,2 +1,2 @@
-# Laicode
-The code of Laioffer
+# Algorithm Class
+The classic algorithm
