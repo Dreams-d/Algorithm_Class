@@ -1,3 +1,5 @@
+package Laicode.Class8_2_StringI;
+
 /**
  * Description
  * Given a string, remove all leading/trailing/duplicated empty spaces.
