@@ -4,6 +4,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
+ * Kth Smallest Number In Sorted Matrix
  * Description
  * Given a matrix of size N x M. For each row the elements are sorted in ascending order, and for each column the elements are also sorted in ascending order. Find the Kth smallest number in it.
  * 
@@ -68,5 +69,17 @@ public class KthSmallestNumberInSortedMatrix {
             this.column = column;
             this.value = value;
         }
+    }
+
+    public static void main(String[] args) {
+    	KthSmallestNumberInSortedMatrix sol = new KthSmallestNumberInSortedMatrix();
+    	int[][] matrix = new int[][]{
+    			{1,  3, 5,  7},
+			    {2,  4, 8,  9},
+			    {3,  5, 11, 15},
+			    {6,  8, 13, 18}
+    	};
+
+    	System.out.println(sol.kthSmallest(matrix,5));
     }
 }
