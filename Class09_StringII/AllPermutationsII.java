@@ -16,7 +16,7 @@ import java.util.Set;
  * Set = null, all permutations are []
  *
  * Time = O(n * n-1 * n-2 * ...) = O(n!)
- * Space = O(n)
+ * Space = O(n + n-1 + ... +1) = O(n^2)
  */
 public class AllPermutationsII {
 	public List<String> permutations(String set) {
@@ -67,5 +67,6 @@ public class AllPermutationsII {
 		AllPermutationsII sol = new AllPermutationsII();
 		String s = "abacd";
 		List<String> res = sol.permutations(s);
+		System.out.println(res);
 	}
 }
